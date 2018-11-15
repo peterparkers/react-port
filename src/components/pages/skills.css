@@ -1,0 +1,47 @@
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background: #f39c12;
+}
+.programming {
+    grid-column: 1/2;
+    /* background-color: #f39c12; */
+    text-align: center;
+}
+.framework {
+    grid-column: 2/3;
+    /* background-color: #d35400; */
+}
+.tool {
+    grid-column: 3/4;
+    /* background-color: #e67e22; */
+}
+.other {
+    grid-column: 4/5;
+    /* background-color: #f1c40f; */
+}
+
+@media (max-width: 700px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+    .programming {
+        grid-column: 1/2;
+        background-color: #f39c12;
+    }
+    .framework {
+        grid-column: 1/2;
+        background-color: #d35400;
+    }
+    .tool {
+        grid-column: 1/2;
+        background-color: #e67e22;
+    }
+    .other {
+        grid-column: 1/2;
+        background-color: #f1c40f;
+    }
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+.skillComponent {
+    background-color: #222222;
+    overflow: hidden;
+    /* float: left; */
+    border-radius: 10px;
+    padding: 0 20px;
+    width: 200px;
+    margin: 15px;
+}
+.name {
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 150%;
+}

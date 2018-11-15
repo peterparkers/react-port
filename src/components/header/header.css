@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+.header {
+    background: #111111;
+    height: 80px;
+}
+
+ul {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    font-family: sans-serif;
+}
+ul li a {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+    margin: 0 25px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    padding: 5px 10px;
+}
+ul li a:hover {
+    color: #fff;
+    background: #e74c3c;
+}
+.current {
+    color: #fff;
+    background: #e74c3c;
+}
+
+.current:before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: -8px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e74c3c;
+    border-width: 0 0 2px 2px;
+    transition: .5s;
+    opacity: 1;
+}
+
+.current:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e74c3c;
+    border-width: 2px 2px 0 0;
+    transition: .5s;
+    opacity: 1;
+}
+
+ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e74c3c;
+    border-width: 0 0 2px 2px;
+    transition: .5s;
+    opacity: 0;
+}
+ul li a:hover:before {
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+}
+ul li a:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #e74c3c;
+    border-width: 2px 2px 0 0;
+    transition: .5s;
+    opacity: 0;
+}
+ul li a:hover:after {
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+}
